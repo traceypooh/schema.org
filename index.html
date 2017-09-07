@@ -1,64 +1,39 @@
 <!doctype html><head><script src="eveal.js"></script></head><body>
 
 
-# Talk
-### with slides
-
-<small>
-  by me
-  <br/>
-
-  Sometime 2017
-</small>
-
-<small>
-  _?_ for keyboard shortcuts<br/>
-</small>
+# schema.org
+## dan brickley + TV
+## Sep 7, 2017
+- adopted by google / bing
+- extend to media clips
+- runs headless browser to get data (eg: JSON-LD)
 
 ---
-### Run these slides Locally
-
-``` bash
-git clone https://github.com/traceypooh/eveal.js; open eveal.js/index.html
-```
-
-(network not needed after clone)
+# javascript
+- suggests _not_ using / minimizing JS to avoid headless browser requirements
+- that should be OK for _archive_ pages (we dont SPA and have minimal JS DOM changes)
+- dan says can have isssue, if do search on bing..
+  - then surfacing 'there is a factcheck avail for this clip' can have JS issues
 
 ---
-### Say Something
-- keep calm
-- carry on
+# claim review (eg: ptr to TV clip on 3rd party site)
+- http://schema.org/ClaimReview
+- https://github.com/schemaorg/schemaorg/issues/1686
+- has video clip pointer
+- use W3C media fragments or not?
+- right now it's fairly article based for google/schema.org
+- prolly _should_ make schema.org have affordance for video vs. audio cited clip
+  - _may already!_ (see next slide)
 
 ---
-### Choices
-
-You can:
-- copy the _index.html_ file to _tech-deck.html_
-   - modify it
-   - put as many 'decks' as you like in this repo
-   - and then open tech-deck.html in your browser
-- or keep cloning/forking to multiple repositories..
-
----
-I like to
-``` bash
-atom README.md
-```
-
-to get nice coloring and edit help/cues from my editor, Atom.
+# clip
+BBC came up with 'clip'
+- http://schema.org/Clip
+- http://schema.org/VideoObject
+- http://schema.org/AudioObject
+- http://blog.schema.org/2013/12/schemaorg-for-tv-and-radio-markup.html
+- https://gist.github.com/danbri/96d6265756577e5f21ad4141f053b76d
 
 ---
-<!-- .slide: data-background="https://media.giphy.com/media/Gdjgn0hy8zBRK/giphy.gif" -->
-# Demo Time!
-
----
-### Let's table that discussion
-
-| fruity   | color                    | etc |
-| -------- |:------------------------ |:----|
-| orange   | well, i mean it's orange | tic |
-| banana   | mushy                    | tac |
-
----
-<!-- .slide: data-background="https://media.giphy.com/media/q4ICE9wYvOwBG/giphy.gif" -->
-# THE END
+# links
+- http://schema.org/docs/full.html
